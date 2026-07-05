@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Govt. Document Resizer - Pro</title>
+    
+    <!-- PWA App Links (For Offline & App Installation) -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+
     <!-- Tailwind CSS for Professional Design -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Heic2Any Library -->
